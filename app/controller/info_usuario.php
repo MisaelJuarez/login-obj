@@ -54,9 +54,10 @@ class Informacion extends Conexion {
                     $actualizacion->bindParam(':nombre',$nombre);
                     $actualizacion->bindParam(':apellido',$apellido);
                     $actualizacion->bindParam(':email',$email);
-                    $actualizacion->bindParam(':pass',$pass);
+                    $passw = password_hash($pass,PASSWORD_BCRYPT);
+                    $actualizacion->bindParam(':pass',$passw);
                     $actualizacion->bindParam(':id_usuario',$_SESSION['usuario']['id_usuario']);
-
+                    
                     $actualizacion->execute();
 
                     echo json_encode(["cerrar","Actualizacion correcta","Tu session se cerrara para que ingreses de nuevo tus datos"]);

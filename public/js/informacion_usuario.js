@@ -19,7 +19,6 @@ const obtener_informacion = () => {
         document.getElementById('nombre').value = respuesta['nombre'];
         document.getElementById('apellido').value = respuesta['apellido'];
         document.getElementById('email').value = respuesta['email'];
-        document.getElementById('pass').value = respuesta['pass'];
     });
 }
 

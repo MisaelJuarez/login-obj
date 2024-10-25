@@ -14,7 +14,7 @@ if (!isset($_SESSION['usuario'])) {
     <link rel="stylesheet" href="<?=CSS."bootstrap.min.css";?>">
     <link rel="stylesheet" href="<?=CSS."informacion_usuario.css";?>">
     <link rel="stylesheet" href="<?=ICONS."bootstrap-icons.css";?>">
-    <title>Document</title>
+    <title>Informacion de usuario</title>
 </head>
 <body>
     <div class="container">

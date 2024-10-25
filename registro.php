@@ -15,7 +15,7 @@ if (isset($_SESSION['usuario'])) {
     <link rel="stylesheet" href="<?=CSS."bootstrap.min.css";?>">
     <link rel="stylesheet" href="<?=ICONS."bootstrap-icons.css";?>">
     <link rel="stylesheet" href="<?=CSS."registro_vista.css";?>">
-    <title>Formulario de datos</title>
+    <title>Registro de usuario</title>
 </head>
 <body class="d-flex justify-content-center align-items-center mt-5 p-3">
     <form action="./registro_vista.php" method="post" class="w-25 p-4">
@@ -44,6 +44,6 @@ if (isset($_SESSION['usuario'])) {
     </form>
 
     <script src="./public/js/alerts.js"></script>
-    <script src="./public/js/main.js"></script>
+    <script src="./public/js/Usuario.js"></script>
 </body>
 </html>

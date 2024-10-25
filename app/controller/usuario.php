@@ -77,7 +77,7 @@ class Usuario extends Conexion {
                 $datos = $consulta->fetch(PDO::FETCH_ASSOC);
         
                 if ($datos) {
-                    if ($datos['pass'] == $passw) {
+                    if (password_verify($passw,$datos['pass'])) {
                         $_SESSION['usuario'] = $datos;
                         echo json_encode([1,"Datos de acceso correctos"]);
                     } else {

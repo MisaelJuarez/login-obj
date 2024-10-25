@@ -27,9 +27,10 @@ form {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.table {
+/* .table {
     width: 90%;
-}
+    margin-right: 20px;
+} */
 
 .registrar_producto {
     width: 70%;
@@ -45,4 +46,14 @@ form {
     background-repeat: no-repeat;
     border: 1px solid #7d7c15;
     border-radius: 10px;
+}
+
+#contenedor-tabla {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    backdrop-filter: blur(10px); /* Desenfoque del fondo */
+    -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }

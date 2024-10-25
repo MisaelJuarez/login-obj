@@ -16,7 +16,7 @@ if (isset($_SESSION['usuario'])) {
     <link rel="stylesheet" href="<?=CSS."bootstrap.min.css";?>">
     <link rel="stylesheet" href="<?=ICONS."bootstrap-icons.css";?>">
     <link rel="stylesheet" href="<?=CSS."main.css";?>">
-    <title>Formulario de datos</title>
+    <title>Iniciar session</title>
 </head>
 <body class="d-flex justify-content-center align-items-center mt-5 p-3">
     <form action="./login.php" method="post" class="w-25 p-4">
@@ -36,11 +36,11 @@ if (isset($_SESSION['usuario'])) {
         </div>
         <div class="mt-4 d-flex justify-content-center">
             <p class="">¿No tienes una cuenta?</p> 
-            <a href="./registro_vista.php" class="text-white mx-3">Crear ahora</a>
+            <a href="./registro.php" class="text-white mx-3">Crear ahora</a>
         </div>
     </form>
 
     <script src="./public/js/alerts.js"></script>
-    <script src="./public/js/main.js"></script>
+    <script src="./public/js/Usuario.js"></script>
 </body>
 </html>

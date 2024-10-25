@@ -14,8 +14,9 @@ if (!isset($_SESSION['usuario'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?=CSS."bootstrap.min.css";?>">
     <link rel="stylesheet" href="<?=CSS."inicio.css";?>">
+    <link rel="stylesheet" href="<?=CSS."table.css";?>">
     <link rel="stylesheet" href="<?=ICONS."bootstrap-icons.css";?>">
-    <title>Formulario de datos</title>
+    <title>Formulario de productos</title>
 </head>
 <body class="vh-100">
     
@@ -58,8 +59,8 @@ if (!isset($_SESSION['usuario'])) {
                 </div>
             </form>
         </div>
-        <div class="col-7 p-5">
-            <table class="table table-dark table-striped">
+        <div class="col-7" id="contenedor-tabla">
+            <table id="myTable" class="table table-dark table-striped">
                 <thead>
                     <tr>
                         <th scope="col">Nombre</th>
@@ -74,10 +75,10 @@ if (!isset($_SESSION['usuario'])) {
         </div>
     </div>
 
-
-
-    <script src="./public/js/alerts.js"></script>
-    <script src="./public/js/registro_productos.js"></script>
-    <script src="./public/js/cerrar_session.js"></script>
+    <script src="<?=JS."jquery.js";?>""></script>
+    <script src="<?=JS."table.js";?>""></script>
+    <script src="<?=JS."alerts.js";?>""></script>
+    <script src="<?=JS."Productos.js";?>""></script>
+    <script src="<?=JS."cerrar_session.js";?>""></script>
 </body>
 </html>
